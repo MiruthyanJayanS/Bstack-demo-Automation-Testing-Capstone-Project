@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-08T17:15:29 IST" name="Surefire suite" finished-at="2025-09-08T17:18:38 IST" duration-ms="189427">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@158da8e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-09-08T17:15:29 IST" name="Surefire test" finished-at="2025-09-08T17:18:38 IST" duration-ms="189427">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:00 IST" name="baseSetup" finished-at="2025-09-08T17:18:01 IST" duration-ms="954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method is-config="true" signature="loadData()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:01 IST" name="loadData" finished-at="2025-09-08T17:18:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadData -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:01 IST" name="beforeEach" finished-at="2025-09-08T17:18:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.openLoginPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="openLoginPage()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:01 IST" name="openLoginPage" finished-at="2025-09-08T17:18:04 IST" duration-ms="3590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPage -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:01 IST" name="initPage" finished-at="2025-09-08T17:18:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:04 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openLoginPage status=SUCCESS method=LoginTest.openLoginPage()[pri:0, instance:tests.LoginTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="emptyPassword()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:04 IST" name="emptyPassword" finished-at="2025-09-08T17:18:05 IST" depends-on-methods="tests.LoginTest.openLoginPage" duration-ms="847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPassword -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:04 IST" name="beforeEach" finished-at="2025-09-08T17:18:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.emptyPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:04 IST" name="initPage" finished-at="2025-09-08T17:18:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:05 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=emptyPassword status=SUCCESS method=LoginTest.emptyPassword()[pri:0, instance:tests.LoginTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="emptyUsername()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:05 IST" name="emptyUsername" finished-at="2025-09-08T17:18:06 IST" depends-on-methods="tests.LoginTest.openLoginPage" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUsername -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:05 IST" name="beforeEach" finished-at="2025-09-08T17:18:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.emptyUsername()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:05 IST" name="initPage" finished-at="2025-09-08T17:18:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:06 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=emptyUsername status=SUCCESS method=LoginTest.emptyUsername()[pri:0, instance:tests.LoginTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="invalidPassword()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:06 IST" name="invalidPassword" finished-at="2025-09-08T17:18:07 IST" depends-on-methods="tests.LoginTest.openLoginPage" duration-ms="888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:06 IST" name="initPage" finished-at="2025-09-08T17:18:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:06 IST" name="beforeEach" finished-at="2025-09-08T17:18:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.invalidPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:07 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidPassword status=SUCCESS method=LoginTest.invalidPassword()[pri:0, instance:tests.LoginTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="validLogin()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:07 IST" name="validLogin" finished-at="2025-09-08T17:18:08 IST" depends-on-methods="tests.LoginTest.openLoginPage" duration-ms="1797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:07 IST" name="initPage" finished-at="2025-09-08T17:18:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:07 IST" name="beforeEach" finished-at="2025-09-08T17:18:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:08 IST" name="baseTeardown" finished-at="2025-09-08T17:18:09 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@72d1ad2e]" started-at="2025-09-08T17:18:08 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=LoginTest.validLogin()[pri:0, instance:tests.LoginTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.CheckoutFlowTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:02 IST" name="baseSetup" finished-at="2025-09-08T17:16:03 IST" duration-ms="947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:03 IST" name="beforeEach" finished-at="2025-09-08T17:16:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CheckoutFlowTest.testLogin() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="testLogin()[pri:1, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:03 IST" name="testLogin" finished-at="2025-09-08T17:16:11 IST" duration-ms="8550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:11 IST" name="baseAfterEach" finished-at="2025-09-08T17:16:11 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=CheckoutFlowTest.testLogin()[pri:1, instance:tests.CheckoutFlowTest@4f6ee6e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:11 IST" name="beforeEach" finished-at="2025-09-08T17:16:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CheckoutFlowTest.testAddToCart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="testAddToCart()[pri:2, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:11 IST" name="testAddToCart" finished-at="2025-09-08T17:16:17 IST" depends-on-methods="tests.CheckoutFlowTest.testLogin" duration-ms="5773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:17 IST" name="baseAfterEach" finished-at="2025-09-08T17:16:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddToCart status=SUCCESS method=CheckoutFlowTest.testAddToCart()[pri:2, instance:tests.CheckoutFlowTest@4f6ee6e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:17 IST" name="beforeEach" finished-at="2025-09-08T17:16:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CheckoutFlowTest.testProceedToCheckout() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="testProceedToCheckout()[pri:3, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:17 IST" name="testProceedToCheckout" finished-at="2025-09-08T17:16:23 IST" depends-on-methods="tests.CheckoutFlowTest.testAddToCart" duration-ms="5675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProceedToCheckout -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:23 IST" name="baseAfterEach" finished-at="2025-09-08T17:16:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testProceedToCheckout status=SUCCESS method=CheckoutFlowTest.testProceedToCheckout()[pri:3, instance:tests.CheckoutFlowTest@4f6ee6e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="testFillAddressAndSubmit()[pri:4, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:23 IST" name="testFillAddressAndSubmit" finished-at="2025-09-08T17:16:28 IST" depends-on-methods="tests.CheckoutFlowTest.testProceedToCheckout" duration-ms="5365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFillAddressAndSubmit -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:23 IST" name="beforeEach" finished-at="2025-09-08T17:16:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CheckoutFlowTest.testFillAddressAndSubmit() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:28 IST" name="baseAfterEach" finished-at="2025-09-08T17:16:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFillAddressAndSubmit status=SUCCESS method=CheckoutFlowTest.testFillAddressAndSubmit()[pri:4, instance:tests.CheckoutFlowTest@4f6ee6e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:28 IST" name="beforeEach" finished-at="2025-09-08T17:16:28 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CheckoutFlowTest.testOrderConfirmationAndReceipt() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="testOrderConfirmationAndReceipt()[pri:5, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:28 IST" name="testOrderConfirmationAndReceipt" finished-at="2025-09-08T17:16:33 IST" depends-on-methods="tests.CheckoutFlowTest.testFillAddressAndSubmit" duration-ms="5091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderConfirmationAndReceipt -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:33 IST" name="baseAfterEach" finished-at="2025-09-08T17:16:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOrderConfirmationAndReceipt status=SUCCESS method=CheckoutFlowTest.testOrderConfirmationAndReceipt()[pri:5, instance:tests.CheckoutFlowTest@4f6ee6e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.CheckoutFlowTest@4f6ee6e4]" started-at="2025-09-08T17:16:33 IST" name="baseTeardown" finished-at="2025-09-08T17:16:33 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+      </class> <!-- tests.CheckoutFlowTest -->
+      <class name="tests.IntegrationFlowTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.IntegrationFlowTest@6b927fb]" started-at="2025-09-08T17:17:48 IST" name="baseSetup" finished-at="2025-09-08T17:17:49 IST" duration-ms="947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method signature="endToEndUserJourney()[pri:0, instance:tests.IntegrationFlowTest@6b927fb]" started-at="2025-09-08T17:17:49 IST" name="endToEndUserJourney" description="E2E: Login -&gt; Cart -&gt; Checkout -&gt; Order Confirmation" finished-at="2025-09-08T17:17:58 IST" duration-ms="8525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndUserJourney -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.IntegrationFlowTest@6b927fb]" started-at="2025-09-08T17:17:49 IST" name="beforeEach" finished-at="2025-09-08T17:17:49 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.IntegrationFlowTest.endToEndUserJourney()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.IntegrationFlowTest@6b927fb]" started-at="2025-09-08T17:17:58 IST" name="baseTeardown" finished-at="2025-09-08T17:18:00 IST" duration-ms="1686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.IntegrationFlowTest@6b927fb]" started-at="2025-09-08T17:17:58 IST" name="baseAfterEach" finished-at="2025-09-08T17:17:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=endToEndUserJourney status=SUCCESS method=IntegrationFlowTest.endToEndUserJourney()[pri:0, instance:tests.IntegrationFlowTest@6b927fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+      </class> <!-- tests.IntegrationFlowTest -->
+      <class name="tests.OffersPageTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.OffersPageTest@399f45b1]" started-at="2025-09-08T17:18:09 IST" name="baseSetup" finished-at="2025-09-08T17:18:10 IST" duration-ms="964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.OffersPageTest@399f45b1]" started-at="2025-09-08T17:18:10 IST" name="beforeEach" finished-at="2025-09-08T17:18:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.OffersPageTest.shouldShowNoPromotionalOffersMessage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="shouldShowNoPromotionalOffersMessage()[pri:0, instance:tests.OffersPageTest@399f45b1]" started-at="2025-09-08T17:18:10 IST" name="shouldShowNoPromotionalOffersMessage" description="Offers page: verify empty-state message after login" finished-at="2025-09-08T17:18:20 IST" duration-ms="10058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldShowNoPromotionalOffersMessage -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.OffersPageTest@399f45b1]" started-at="2025-09-08T17:18:20 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldShowNoPromotionalOffersMessage status=SUCCESS method=OffersPageTest.shouldShowNoPromotionalOffersMessage()[pri:0, instance:tests.OffersPageTest@399f45b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.OffersPageTest@399f45b1]" started-at="2025-09-08T17:18:20 IST" name="baseTeardown" finished-at="2025-09-08T17:18:20 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+      </class> <!-- tests.OffersPageTest -->
+      <class name="tests.FavoritesTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:16:33 IST" name="baseSetup" finished-at="2025-09-08T17:16:34 IST" duration-ms="1089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:16:34 IST" name="beforeEach" finished-at="2025-09-08T17:16:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.FavoritesTest.testAddFavorite() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="testAddFavorite()[pri:1, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:16:34 IST" name="testAddFavorite" finished-at="2025-09-08T17:17:07 IST" duration-ms="32358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFavorite -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:17:07 IST" name="baseAfterEach" finished-at="2025-09-08T17:17:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddFavorite status=SUCCESS method=FavoritesTest.testAddFavorite()[pri:1, instance:tests.FavoritesTest@4466af20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="testOpenFavouritesAndAssert()[pri:2, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:17:07 IST" name="testOpenFavouritesAndAssert" finished-at="2025-09-08T17:17:10 IST" depends-on-methods="tests.FavoritesTest.testAddFavorite" duration-ms="3161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenFavouritesAndAssert -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:17:07 IST" name="beforeEach" finished-at="2025-09-08T17:17:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.FavoritesTest.testOpenFavouritesAndAssert() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:17:10 IST" name="baseAfterEach" finished-at="2025-09-08T17:17:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOpenFavouritesAndAssert status=SUCCESS method=FavoritesTest.testOpenFavouritesAndAssert()[pri:2, instance:tests.FavoritesTest@4466af20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.FavoritesTest@4466af20]" started-at="2025-09-08T17:17:10 IST" name="baseTeardown" finished-at="2025-09-08T17:17:10 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+      </class> <!-- tests.FavoritesTest -->
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:10 IST" name="baseSetup" finished-at="2025-09-08T17:17:11 IST" duration-ms="945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:11 IST" name="beforeEach" finished-at="2025-09-08T17:17:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTest.shouldLoadCatalogAndListProducts() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="shouldLoadCatalogAndListProducts()[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:11 IST" name="shouldLoadCatalogAndListProducts" description="Homepage should load and list products" finished-at="2025-09-08T17:17:18 IST" duration-ms="6437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldLoadCatalogAndListProducts -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:18 IST" name="baseAfterEach" finished-at="2025-09-08T17:17:18 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldLoadCatalogAndListProducts status=SUCCESS method=HomePageTest.shouldLoadCatalogAndListProducts()[pri:0, instance:tests.HomePageTest@a514af7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="shouldAddFirstProductToCart()[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:18 IST" name="shouldAddFirstProductToCart" description="Add first product to cart from listing" finished-at="2025-09-08T17:17:23 IST" depends-on-methods="tests.HomePageTest.shouldLoadCatalogAndListProducts" duration-ms="5181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAddFirstProductToCart -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:18 IST" name="beforeEach" finished-at="2025-09-08T17:17:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTest.shouldAddFirstProductToCart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:23 IST" name="baseAfterEach" finished-at="2025-09-08T17:17:23 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldAddFirstProductToCart status=SUCCESS method=HomePageTest.shouldAddFirstProductToCart()[pri:0, instance:tests.HomePageTest@a514af7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="shouldSelectAndClearEachVendorInOnePass()[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:23 IST" name="shouldSelectAndClearEachVendorInOnePass" description="One pass only: for each vendor, select (shot) then clear (shot)" finished-at="2025-09-08T17:17:44 IST" depends-on-methods="tests.HomePageTest.shouldLoadCatalogAndListProducts" duration-ms="21255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSelectAndClearEachVendorInOnePass -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:23 IST" name="beforeEach" finished-at="2025-09-08T17:17:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTest.shouldSelectAndClearEachVendorInOnePass() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:44 IST" name="baseAfterEach" finished-at="2025-09-08T17:17:44 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldSelectAndClearEachVendorInOnePass status=SUCCESS method=HomePageTest.shouldSelectAndClearEachVendorInOnePass()[pri:0, instance:tests.HomePageTest@a514af7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="shouldSortCatalogAndCaptureShots()[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:44 IST" name="shouldSortCatalogAndCaptureShots" description="Sort products via dropdown and capture screenshots" finished-at="2025-09-08T17:17:48 IST" depends-on-methods="tests.HomePageTest.shouldLoadCatalogAndListProducts" duration-ms="4340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldSortCatalogAndCaptureShots -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:44 IST" name="beforeEach" finished-at="2025-09-08T17:17:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomePageTest.shouldSortCatalogAndCaptureShots() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:48 IST" name="baseAfterEach" finished-at="2025-09-08T17:17:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shouldSortCatalogAndCaptureShots status=SUCCESS method=HomePageTest.shouldSortCatalogAndCaptureShots()[pri:0, instance:tests.HomePageTest@a514af7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.HomePageTest@a514af7]" started-at="2025-09-08T17:17:48 IST" name="baseTeardown" finished-at="2025-09-08T17:17:48 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+      </class> <!-- tests.HomePageTest -->
+      <class name="tests.CartTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:37 IST" name="baseSetup" finished-at="2025-09-08T17:15:38 IST" duration-ms="951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:38 IST" name="beforeEach" finished-at="2025-09-08T17:15:38 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CartTest.testLoginAndOpenCart() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="testLoginAndOpenCart()[pri:1, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:38 IST" name="testLoginAndOpenCart" finished-at="2025-09-08T17:15:51 IST" duration-ms="12726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndOpenCart -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:51 IST" name="baseAfterEach" finished-at="2025-09-08T17:15:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginAndOpenCart status=SUCCESS method=CartTest.testLoginAndOpenCart()[pri:1, instance:tests.CartTest@1fa268de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="testAddItemAndAssertQuantity()[pri:2, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:51 IST" name="testAddItemAndAssertQuantity" finished-at="2025-09-08T17:15:56 IST" depends-on-methods="tests.CartTest.testLoginAndOpenCart" duration-ms="5156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddItemAndAssertQuantity -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:51 IST" name="beforeEach" finished-at="2025-09-08T17:15:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CartTest.testAddItemAndAssertQuantity() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:56 IST" name="baseAfterEach" finished-at="2025-09-08T17:15:56 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddItemAndAssertQuantity status=SUCCESS method=CartTest.testAddItemAndAssertQuantity()[pri:2, instance:tests.CartTest@1fa268de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:56 IST" name="beforeEach" finished-at="2025-09-08T17:15:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CartTest.testProceedToCheckout() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method signature="testProceedToCheckout()[pri:3, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:15:56 IST" name="testProceedToCheckout" finished-at="2025-09-08T17:16:02 IST" depends-on-methods="tests.CartTest.testAddItemAndAssertQuantity" duration-ms="5648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProceedToCheckout -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:16:02 IST" name="baseTeardown" finished-at="2025-09-08T17:16:02 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.CartTest@1fa268de]" started-at="2025-09-08T17:16:02 IST" name="baseAfterEach" finished-at="2025-09-08T17:16:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testProceedToCheckout status=SUCCESS method=CartTest.testProceedToCheckout()[pri:3, instance:tests.CartTest@1fa268de] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+      </class> <!-- tests.CartTest -->
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@158da8e]" started-at="2025-09-08T17:15:29 IST" name="setUpClass" finished-at="2025-09-08T17:15:31 IST" duration-ms="1869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6f4adaab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@158da8e]" started-at="2025-09-08T17:15:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-08T17:15:35 IST" duration-ms="4467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login (smoke)"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@158da8e]" started-at="2025-09-08T17:15:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-08T17:15:37 IST" duration-ms="1787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login (smoke)"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@158da8e]" started-at="2025-09-08T17:15:37 IST" name="tearDownClass" finished-at="2025-09-08T17:15:37 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+      <class name="tests.OrderConfirmationTest">
+        <test-method is-config="true" signature="baseSetup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:20 IST" name="baseSetup" finished-at="2025-09-08T17:18:21 IST" duration-ms="930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseSetup -->
+        <test-method signature="addItemOpenCartAndAssertQty()[pri:1, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:21 IST" name="addItemOpenCartAndAssertQty" finished-at="2025-09-08T17:18:32 IST" duration-ms="11307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemOpenCartAndAssertQty -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:21 IST" name="beforeEach" finished-at="2025-09-08T17:18:21 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.OrderConfirmationTest.addItemOpenCartAndAssertQty() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:32 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addItemOpenCartAndAssertQty status=SUCCESS method=OrderConfirmationTest.addItemOpenCartAndAssertQty()[pri:1, instance:tests.OrderConfirmationTest@38c6f217] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="proceedToCheckoutAndFillAddress()[pri:2, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:32 IST" name="proceedToCheckoutAndFillAddress" finished-at="2025-09-08T17:18:38 IST" depends-on-methods="tests.OrderConfirmationTest.addItemOpenCartAndAssertQty" duration-ms="5976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToCheckoutAndFillAddress -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:32 IST" name="beforeEach" finished-at="2025-09-08T17:18:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.OrderConfirmationTest.proceedToCheckoutAndFillAddress() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:38 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=proceedToCheckoutAndFillAddress status=SUCCESS method=OrderConfirmationTest.proceedToCheckoutAndFillAddress()[pri:2, instance:tests.OrderConfirmationTest@38c6f217] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method signature="assertConfirmationAndDownloadReceipt()[pri:3, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:38 IST" name="assertConfirmationAndDownloadReceipt" finished-at="2025-09-08T17:18:38 IST" depends-on-methods="tests.OrderConfirmationTest.proceedToCheckoutAndFillAddress" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertConfirmationAndDownloadReceipt -->
+        <test-method is-config="true" signature="beforeEach(java.lang.reflect.Method)[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:38 IST" name="beforeEach" finished-at="2025-09-08T17:18:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.OrderConfirmationTest.assertConfirmationAndDownloadReceipt() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEach -->
+        <test-method is-config="true" signature="baseAfterEach(org.testng.ITestResult)[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:38 IST" name="baseAfterEach" finished-at="2025-09-08T17:18:38 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assertConfirmationAndDownloadReceipt status=SUCCESS method=OrderConfirmationTest.assertConfirmationAndDownloadReceipt()[pri:3, instance:tests.OrderConfirmationTest@38c6f217] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterEach -->
+        <test-method is-config="true" signature="baseTeardown()[pri:0, instance:tests.OrderConfirmationTest@38c6f217]" started-at="2025-09-08T17:18:38 IST" name="baseTeardown" finished-at="2025-09-08T17:18:38 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseTeardown -->
+      </class> <!-- tests.OrderConfirmationTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -4,6 +4,10 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.edge.EdgeDriver;
+//import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -17,38 +21,67 @@ import utils.Screenshot;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
 @Listeners({ExtentTestNgListener.class})
 public abstract class BaseTest {
-
   protected WebDriver driver;
   private Path downloadDir;
+
   @BeforeClass(alwaysRun = true)
-  @Parameters({"downloadDir"})
-  public void baseSetup(@Optional("C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources") String downloadDirParam)
-      throws IOException {
-    
+  @Parameters({"browser","headless","downloadDir"})
+  public void baseSetup(
+      @Optional("chrome") String browser,
+      @Optional("false") String headless,
+      @Optional("C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources") String downloadDirParam
+  ) throws IOException {
+
     downloadDir = Paths.get(downloadDirParam);
     Files.createDirectories(downloadDir);
 
-    
-    Map<String, Object> prefs = new HashMap<>();
-    prefs.put("download.default_directory", downloadDir.toString());   
-    prefs.put("download.prompt_for_download", false);
-    prefs.put("plugins.always_open_pdf_externally", true);           
+    boolean isHeadless = Boolean.parseBoolean(headless);
 
-    ChromeOptions options = new ChromeOptions();
-    options.setExperimentalOption("prefs", prefs);
+    switch (browser.toLowerCase()) {
+      case "firefox": {
+        FirefoxOptions fo = new FirefoxOptions();
+        if (isHeadless) fo.addArguments("--headless=new");
+        fo.addPreference("browser.download.dir", downloadDir.toAbsolutePath().toString());
+        fo.addPreference("browser.download.folderList", 2);
+        fo.addPreference("browser.download.useDownloadDir", true);
+        fo.addPreference("pdfjs.disabled", true);
+        fo.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf,application/octet-stream");
+        driver = new FirefoxDriver(fo);
+        break;
+      }
+//      case "edge": {
+//        EdgeOptions eo = new EdgeOptions();
+//        eo.setBinary("‪C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+//        if (isHeadless) eo.addArguments("--headless=new");
+//        Map<String,Object> prefs = new HashMap<>();
+//        prefs.put("download.default_directory", downloadDir.toAbsolutePath().toString());
+//        prefs.put("download.prompt_for_download", false);
+//        prefs.put("plugins.always_open_pdf_externally", true);
+//        eo.setExperimentalOption("prefs", prefs);
+//        driver = new EdgeDriver(eo);
+//        break;
+//      }
+      default: {
+        ChromeOptions co = new ChromeOptions();
+        if (isHeadless) co.addArguments("--headless=new");
+        Map<String,Object> prefs = new HashMap<>();
+        prefs.put("download.default_directory", downloadDir.toAbsolutePath().toString());
+        prefs.put("download.prompt_for_download", false);
+        prefs.put("plugins.always_open_pdf_externally", true);
+        co.setExperimentalOption("prefs", prefs);
+        driver = new ChromeDriver(co);
+      }
+    }
 
-    driver = new ChromeDriver(options);
-    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));  
-    driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(45)); 
+    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+    driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(45));
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     driver.manage().window().maximize();
   }
@@ -79,12 +112,9 @@ public abstract class BaseTest {
       } catch (Exception ignore) { }
     }
   }
-  
-  protected Path getDownloadDir() {
-    return downloadDir;
-  }
 
-  
+  protected Path getDownloadDir() { return downloadDir; }
+
   protected void stepLoginDemo() {
     new LoginPage(driver).loginDemo();
   }
@@ -107,22 +137,21 @@ public abstract class BaseTest {
   }
 
   protected void stepAssertOrderAndReceipt() {
-	  OrderConfirmationPage oc = new OrderConfirmationPage(driver);
-	  Assert.assertTrue(oc.isConfirmed(), "Order not confirmed"); 
-	  boolean receiptVisible = oc.isReceiptVisible(java.time.Duration.ofSeconds(25));
-	  Assert.assertTrue(receiptVisible, "Receipt link missing"); 
-	}
+    OrderConfirmationPage oc = new OrderConfirmationPage(driver);
+    Assert.assertTrue(oc.isConfirmed(), "Order not confirmed");
+    boolean receiptVisible = oc.isReceiptVisible(Duration.ofSeconds(25));
+    Assert.assertTrue(receiptVisible, "Receipt link missing");
+  }
 
-  
   protected void passShot(String message, String fileNameStem) {
-	  try {
-	    File shot = Screenshot.save(driver, getClass().getSimpleName(), fileNameStem);
-	    if (shot != null && ExtentTestNgListener.currentTest() != null) {
-	      ExtentTestNgListener.currentTest().pass(
-	          message,
-	          MediaEntityBuilder.createScreenCaptureFromPath(shot.getAbsolutePath()).build()
-	      );
-	    }
-	  } catch (Exception ignore) { }
-	}
+    try {
+      File shot = Screenshot.save(driver, getClass().getSimpleName(), fileNameStem);
+      if (shot != null && ExtentTestNgListener.currentTest() != null) {
+        ExtentTestNgListener.currentTest().pass(
+            message,
+            MediaEntityBuilder.createScreenCaptureFromPath(shot.getAbsolutePath()).build()
+        );
+      }
+    } catch (Exception ignore) { }
+  }
 }

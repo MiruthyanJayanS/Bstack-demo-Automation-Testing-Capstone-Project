@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="BstackDemoAutomation Suite" verbose="3">
-  <test name="All Tests">
+<suite name="BstackDemoAutomation Suite" verbose="3" parallel="none" thread-count="3">
+
+  <test name="All Tests (Single Browser)">
     <classes>
       <class name="tests.CartTest"/>
       <class name="tests.CheckoutFlowTest"/>
       <class name="tests.FavoritesTest"/>
       <class name="tests.HomePageTest"/>
-      <class name="tests.IntegrationFlowTest"/>
       <class name="tests.LoginTest"/>
       <class name="tests.OffersPageTest"/>
       <class name="tests.OrderConfirmationTest"/>
       <class name="runners.TestRunner"/>
     </classes>
   </test>
+
+  <test name="Chrome-Integration">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="headless" value="false"/>
+    <parameter name="downloadDir" value="C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources/chrome"/>
+    <classes>
+      <class name="tests.IntegrationFlowTest"/>
+    </classes>
+  </test>
+
+  <test name="Firefox-Integration">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="headless" value="false"/>
+    <parameter name="downloadDir" value="C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources/firefox"/>
+    <classes>
+      <class name="tests.IntegrationFlowTest"/>
+    </classes>
+  </test>
+<!--
+  <test name="Edge-Integration">
+    <parameter name="browser" value="edge"/>
+    <parameter name="headless" value="false"/>
+    <parameter name="downloadDir" value="C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation/src/main/resources/edge"/>
+    <classes>
+      <class name="tests.IntegrationFlowTest"/>
+    </classes>
+  </test>
+-->
 </suite>

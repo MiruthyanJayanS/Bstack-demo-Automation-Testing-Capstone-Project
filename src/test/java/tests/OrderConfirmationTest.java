@@ -24,7 +24,7 @@ public class OrderConfirmationTest extends BaseTest {
     Thread.sleep(5000);
     passShot("Cart opened with item quantity > 0", "addItemOpenCartAndAssertQty_cartWithQty");
   }
-
+//changes made this time
   @Test(priority = 2, dependsOnMethods = "addItemOpenCartAndAssertQty")
   public void proceedToCheckoutAndFillAddress() throws Exception {
     CartPage cart = new CartPage(driver);

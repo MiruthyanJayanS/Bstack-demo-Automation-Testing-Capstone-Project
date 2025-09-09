@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="180.202" tests="26" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="191.908" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
     <property name="java.class.path" value="C:\Users\mirut\Capstone-Project-workspace\BstackDemoAutomation\target\test-classes;C:\Users\mirut\Capstone-Project-workspace\BstackDemoAutomation\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-simple\2.0.13\slf4j-simple-2.0.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-testng\7.18.1\cucumber-testng-7.18.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -15,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Windows\Temp\surefire7184195615824925710\surefirebooter-20250909144632045_3.jar C:\Windows\Temp\surefire7184195615824925710 2025-09-09T14-46-31_916-jvmRun1 surefire-20250909144632045_1tmp surefire_0-20250909144632045_2tmp"/>
+    <property name="sun.java.command" value="C:\Windows\Temp\surefire2119527207451696518\surefirebooter-20250909173906331_3.jar C:\Windows\Temp\surefire2119527207451696518 2025-09-09T17-39-06_207-jvmRun1 surefire-20250909173906331_1tmp surefire_0-20250909173906331_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mirut\Capstone-Project-workspace\BstackDemoAutomation\target\test-classes;C:\Users\mirut\Capstone-Project-workspace\BstackDemoAutomation\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-simple\2.0.13\slf4j-simple-2.0.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-java\7.18.1\cucumber-java-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-core\7.18.1\cucumber-core-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin\7.18.1\cucumber-gherkin-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.1\cucumber-gherkin-messages-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\datatable\7.18.1\datatable-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-plugin\7.18.1\cucumber-plugin-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\docstring\7.18.1\docstring-7.18.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\html-formatter\21.4.1\html-formatter-21.4.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-testng\7.18.1\cucumber-testng-7.18.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire7184195615824925710\surefirebooter-20250909144632045_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire2119527207451696518\surefirebooter-20250909173906331_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
@@ -58,22 +59,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Open login page&quot;, &quot;Login (smoke)&quot;](1)" classname="runners.TestRunner" time="5.273">
+  <testcase name="runScenario[&quot;Open login page&quot;, &quot;Login (smoke)&quot;](1)" classname="runners.TestRunner" time="14.512">
     <system-out><![CDATA[
 @smoke
 Scenario: Open login page               # src/test/resources/features/login.feature:4
   Given the user opens the sign in page # stepdefinitions.LoginSteps.the_user_opens_the_sign_in_page()
   Then the login page is visible        # stepdefinitions.LoginSteps.the_login_page_is_visible()
 ]]></system-out>
-    <system-err><![CDATA[Sept 09, 2025 2:46:34 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+    <system-err><![CDATA[Sept 09, 2025 5:39:09 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:46:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:39:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:46:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:39:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Valid login&quot;, &quot;Login (smoke)&quot;](2)" classname="runners.TestRunner" time="2.178">
+  <testcase name="runScenario[&quot;Valid login&quot;, &quot;Login (smoke)&quot;](2)" classname="runners.TestRunner" time="1.805">
     <system-out><![CDATA[
 @smoke
 Scenario: Valid login                                                # src/test/resources/features/login.feature:9
@@ -82,92 +83,92 @@ Scenario: Valid login                                                # src/test/
   Then the app navigates to the home page                            # stepdefinitions.LoginSteps.the_app_navigates_to_the_home_page()
 ]]></system-out>
   </testcase>
-  <testcase name="testLoginAndOpenCart" classname="tests.CartTest" time="11.71">
-    <system-err><![CDATA[Sept 09, 2025 2:46:43 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="testLoginAndOpenCart" classname="tests.CartTest" time="9.345">
+    <system-err><![CDATA[Sept 09, 2025 5:39:27 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:46:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:39:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:46:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:39:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testAddItemAndAssertQuantity" classname="tests.CartTest" time="5.193"/>
-  <testcase name="testProceedToCheckout" classname="tests.CartTest" time="5.693"/>
-  <testcase name="testLogin" classname="tests.CheckoutFlowTest" time="12.852">
-    <system-err><![CDATA[Sept 09, 2025 2:47:07 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="testAddItemAndAssertQuantity" classname="tests.CartTest" time="5.184"/>
+  <testcase name="testProceedToCheckout" classname="tests.CartTest" time="5.696"/>
+  <testcase name="testLogin" classname="tests.CheckoutFlowTest" time="8.525">
+    <system-err><![CDATA[Sept 09, 2025 5:39:48 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:47:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:39:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:47:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:39:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testAddToCart" classname="tests.CheckoutFlowTest" time="5.815"/>
-  <testcase name="testProceedToCheckout" classname="tests.CheckoutFlowTest" time="5.677"/>
-  <testcase name="testFillAddressAndSubmit" classname="tests.CheckoutFlowTest" time="5.361"/>
-  <testcase name="testOrderConfirmationAndReceipt" classname="tests.CheckoutFlowTest" time="5.09"/>
-  <testcase name="testAddFavorite" classname="tests.FavoritesTest" time="14.071">
-    <system-err><![CDATA[Sept 09, 2025 2:47:43 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="testAddToCart" classname="tests.CheckoutFlowTest" time="5.757"/>
+  <testcase name="testProceedToCheckout" classname="tests.CheckoutFlowTest" time="5.665"/>
+  <testcase name="testFillAddressAndSubmit" classname="tests.CheckoutFlowTest" time="5.318"/>
+  <testcase name="testOrderConfirmationAndReceipt" classname="tests.CheckoutFlowTest" time="5.091"/>
+  <testcase name="testAddFavorite" classname="tests.FavoritesTest" time="13.288">
+    <system-err><![CDATA[Sept 09, 2025 5:40:20 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:47:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:40:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:47:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:40:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testOpenFavouritesAndAssert" classname="tests.FavoritesTest" time="3.151"/>
-  <testcase name="shouldLoadCatalogAndListProducts" classname="tests.HomePageTest" time="8.379">
-    <system-err><![CDATA[Sept 09, 2025 2:48:01 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="testOpenFavouritesAndAssert" classname="tests.FavoritesTest" time="3.138"/>
+  <testcase name="shouldLoadCatalogAndListProducts" classname="tests.HomePageTest" time="7.251">
+    <system-err><![CDATA[Sept 09, 2025 5:40:37 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:48:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:40:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:48:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:40:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="shouldAddFirstProductToCart" classname="tests.HomePageTest" time="5.201"/>
-  <testcase name="shouldSelectAndClearEachVendorInOnePass" classname="tests.HomePageTest" time="21.111"/>
-  <testcase name="shouldSortCatalogAndCaptureShots" classname="tests.HomePageTest" time="4.251"/>
-  <testcase name="endToEndUserJourney" classname="tests.IntegrationFlowTest" time="7.408">
-    <system-err><![CDATA[Sept 09, 2025 2:48:41 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="shouldAddFirstProductToCart" classname="tests.HomePageTest" time="5.172"/>
+  <testcase name="shouldSelectAndClearEachVendorInOnePass" classname="tests.HomePageTest" time="21.037"/>
+  <testcase name="shouldSortCatalogAndCaptureShots" classname="tests.HomePageTest" time="4.235"/>
+  <testcase name="endToEndUserJourney" classname="tests.IntegrationFlowTest" time="18.783">
+    <system-err><![CDATA[Sept 09, 2025 5:41:16 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:48:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:41:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:48:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:41:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="openLoginPage" classname="tests.LoginTest" time="4.79">
-    <system-err><![CDATA[Sept 09, 2025 2:48:50 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="openLoginPage" classname="tests.LoginTest" time="2.298">
+    <system-err><![CDATA[Sept 09, 2025 5:41:36 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:48:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:41:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:48:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:41:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="emptyPassword" classname="tests.LoginTest" time="1.294"/>
-  <testcase name="emptyUsername" classname="tests.LoginTest" time="0.811"/>
-  <testcase name="invalidPassword" classname="tests.LoginTest" time="0.868"/>
-  <testcase name="validLogin" classname="tests.LoginTest" time="2.267"/>
-  <testcase name="shouldShowNoPromotionalOffersMessage" classname="tests.OffersPageTest" time="11.774">
-    <system-err><![CDATA[Sept 09, 2025 2:49:01 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="emptyPassword" classname="tests.LoginTest" time="0.758"/>
+  <testcase name="emptyUsername" classname="tests.LoginTest" time="0.783"/>
+  <testcase name="invalidPassword" classname="tests.LoginTest" time="0.855"/>
+  <testcase name="validLogin" classname="tests.LoginTest" time="1.637"/>
+  <testcase name="shouldShowNoPromotionalOffersMessage" classname="tests.OffersPageTest" time="10.333">
+    <system-err><![CDATA[Sept 09, 2025 5:41:43 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:49:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:41:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:49:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:41:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="addItemOpenCartAndAssertQty" classname="tests.OrderConfirmationTest" time="9.201">
-    <system-err><![CDATA[Sept 09, 2025 2:49:14 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+  <testcase name="addItemOpenCartAndAssertQty" classname="tests.OrderConfirmationTest" time="12.158">
+    <system-err><![CDATA[Sept 09, 2025 5:41:55 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (139.0.7258.68) detected in PATH at E:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (140.0.7339.80); currently, chromedriver 140.0.7339.80 is recommended for chrome 140.*, so it is advised to delete the driver in PATH and retry
-Sept 09, 2025 2:49:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sept 09, 2025 5:41:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sept 09, 2025 2:49:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sept 09, 2025 5:41:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="proceedToCheckoutAndFillAddress" classname="tests.OrderConfirmationTest" time="5.985"/>
-  <testcase name="assertConfirmationAndDownloadReceipt" classname="tests.OrderConfirmationTest" time="0.251"/>
+  <testcase name="proceedToCheckoutAndFillAddress" classname="tests.OrderConfirmationTest" time="5.999"/>
+  <testcase name="assertConfirmationAndDownloadReceipt" classname="tests.OrderConfirmationTest" time="4.213"/>
 </testsuite>

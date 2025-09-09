@@ -9,10 +9,11 @@ import pages.OffersPage;
 public class OffersPageTest extends BaseTest {
 
 	@Test(description = "Offers page: verify empty-state message after login")
-	public void shouldShowNoPromotionalOffersMessage() {
+	public void shouldShowNoPromotionalOffersMessage() throws InterruptedException {
 		new LoginPage(driver).loginDemo();
 		OffersPage offers = new OffersPage(driver);
 		offers.openViaNavbar();
+		Thread.sleep(2000);
 		passShot("Offers page opened", "offers_nav_opened");
 
 		Assert.assertTrue(offers.waitForEmptyOffersMessageVisible(),
@@ -20,7 +21,7 @@ public class OffersPageTest extends BaseTest {
 
 		String expected = "Sorry we do not have any promotional offers in your city.";
 		Assert.assertEquals(offers.emptyOffersText(), expected, "Offers message did not match the expected text");
-
+		Thread.sleep(2000);
 		passShot("Offers empty-state message visible", "offers_empty_state");
 	}
 }

@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.nio.file.*;
 import java.time.Duration;
+import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -101,15 +102,31 @@ public abstract class BaseTest {
   @AfterMethod(alwaysRun = true)
   public void baseAfterEach(ITestResult result) {
     if (result.getStatus() == ITestResult.FAILURE) {
-      try {
-        File shot = Screenshot.save(driver, getClass().getSimpleName(), result.getMethod().getMethodName());
-        if (shot != null && ExtentTestNgListener.currentTest() != null) {
-          ExtentTestNgListener.currentTest().fail(
-              result.getThrowable(),
-              MediaEntityBuilder.createScreenCaptureFromPath(shot.getAbsolutePath()).build()
-          );
-        }
-      } catch (Exception ignore) { }
+    	try {
+    		 
+    		  // File shot = Screenshot.saveFullScreen(driver, getClass().getSimpleName(), result.getMethod().getMethodName()); // entire monitor
+    		  File shot = Screenshot.saveBrowserWindow(driver, getClass().getSimpleName(), result.getMethod().getMethodName()); // only browser window
+
+    		  if (shot != null && ExtentTestNgListener.currentTest() != null) {
+    		    byte[] bytes = Files.readAllBytes(shot.toPath());
+    		    String base64 = Base64.getEncoder().encodeToString(bytes);
+
+    		    
+    		    ExtentTestNgListener.currentTest().fail(
+    		        result.getThrowable(),
+    		        MediaEntityBuilder
+    		            .createScreenCaptureFromBase64String(base64, shot.getName())
+    		            .build()
+    		    );
+
+    		    ExtentTestNgListener.currentTest().info(
+    		        "Screenshot file",
+    		        MediaEntityBuilder
+    		            .createScreenCaptureFromPath(shot.getAbsolutePath())
+    		            .build()
+    		    );
+    		  }
+    		} catch (Exception ignore) { }
     }
   }
 
@@ -144,14 +161,27 @@ public abstract class BaseTest {
   }
 
   protected void passShot(String message, String fileNameStem) {
-    try {
-      File shot = Screenshot.save(driver, getClass().getSimpleName(), fileNameStem);
-      if (shot != null && ExtentTestNgListener.currentTest() != null) {
-        ExtentTestNgListener.currentTest().pass(
-            message,
-            MediaEntityBuilder.createScreenCaptureFromPath(shot.getAbsolutePath()).build()
-        );
-      }
-    } catch (Exception ignore) { }
-  }
+	  try {
+	    File shot = Screenshot.saveBrowserWindow(driver, getClass().getSimpleName(), fileNameStem);
+
+	    if (shot != null && ExtentTestNgListener.currentTest() != null) {
+	      
+	      byte[] bytes = Files.readAllBytes(shot.toPath());
+	      String base64 = Base64.getEncoder().encodeToString(bytes);
+
+	      ExtentTestNgListener.currentTest().pass(
+	          message,
+	          MediaEntityBuilder
+	              .createScreenCaptureFromBase64String(base64, shot.getName())
+	              .build()
+	      );
+	      ExtentTestNgListener.currentTest().info(
+	          "Screenshot file",
+	          MediaEntityBuilder
+	              .createScreenCaptureFromPath(shot.getAbsolutePath())
+	              .build()
+	      );
+	    }
+	  } catch (Exception ignore) { }
+	}
 }

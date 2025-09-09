@@ -42,13 +42,13 @@ public class OrderConfirmationTest extends BaseTest {
 
     Assert.assertTrue(confirm.isConfirmed(), "Order not confirmed"); 
     Assert.assertTrue(confirm.isReceiptVisible(Duration.ofSeconds(25)), "Receipt link missing"); 
-
+    Thread.sleep(2000);
     passShot("Order confirmation visible", "assertConfirmationAndDownloadReceipt_confirm");
 
     Path pdf = confirm.clickReceiptAndWaitForPdf(getDownloadDir(), Duration.ofSeconds(30));
     Assert.assertTrue(Files.exists(pdf), "Receipt not found at " + pdf);
     Assert.assertTrue(Files.size(pdf) > 0, "Receipt is empty: " + pdf);
-
+    Thread.sleep(2000);
     passShot("Receipt download triggered", "assertConfirmationAndDownloadReceipt_downloaded");
   }
 }

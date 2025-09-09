@@ -1,8 +1,8 @@
-pages\CartPage.class
-pages\CheckoutPage.class
-pages\OffersPage.class
-pages\HomePage.class
-pages\LoginPage.class
-utils\Screenshot.class
 pages\FavoritesPage.class
 pages\OrderConfirmationPage.class
+pages\OffersPage.class
+pages\LoginPage.class
+utils\Screenshot.class
+pages\CartPage.class
+pages\HomePage.class
+pages\CheckoutPage.class

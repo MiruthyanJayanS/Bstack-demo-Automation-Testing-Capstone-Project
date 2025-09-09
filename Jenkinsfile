@@ -1,88 +1,87 @@
 pipeline {
   agent any
-  environment { APP_ENV = 'dev' }
+  options { skipDefaultCheckout(true) }  
+  environment {
+    APP_ENV    = 'dev'
+    LOCAL_REPO = 'C:\\Users\\mirut\\Capstone-Project-workspace\\BstackDemoAutomation'
+  }
 
   stages {
-    stage('Clone') {
+    stage('Trust local repo') {
       steps {
-        // Authenticated checkout
-        git branch: 'main',
-            credentialsId: 'github-https-creds',
-            url: 'https://github.com/MiruthyanJayanS/Bstack-demo-Automation-Testing-Capstone-Project.git'
+        ws(env.LOCAL_REPO) {
+          bat 'git config --global --add safe.directory C:/Users/mirut/Capstone-Project-workspace/BstackDemoAutomation'
+        }
       }
     }
 
     stage('Build & Test') {
       steps {
-        echo 'Running TestNG + Cucumber via Maven...'
-        bat 'mvn -B clean test'
+        ws(env.LOCAL_REPO) {
+          echo 'Running TestNG + Cucumber via Maven...' 
+          bat 'mvn -B clean test' 
+        }
       }
     }
 
     stage('Publish Reports') {
       steps {
-        echo 'Publishing Cucumber and Extent reports...'
-
-        cucumber fileIncludePattern: 'target/cucumber-reports/*.json',
-                 buildStatus: 'UNSTABLE',
-                 classifications: [[key: 'Env', value: "${env.APP_ENV}"]]
-
-        publishHTML(target: [
-          reportDir: 'test-output/ExtentReport',
-          reportFiles: 'index.html',
-          reportName: 'Extent Report',
-          keepAll: true,
-          allowMissing: false,
-          alwaysLinkToLastBuild: true
-        ])
+        ws(env.LOCAL_REPO) {
+          echo 'Publishing Cucumber and Extent reports...' 
+          cucumber fileIncludePattern: 'target/cucumber-reports/*.json',
+                   buildStatus: 'UNSTABLE',
+                   classifications: [[key: 'Env', value: "${env.APP_ENV}"]] 
+          publishHTML(target: [
+            reportDir: 'test-output/ExtentReport',
+            reportFiles: 'index.html',
+            reportName: 'Extent Report',
+            keepAll: true,
+            allowMissing: false,
+            alwaysLinkToLastBuild: true
+          ]) 
+        }
       }
     }
 
-    stage('Commit & Push Changes') {
+    stage('Commit & Push (no reset)') {
       steps {
-        script {
-          echo 'Checking for changes to push...'
-          withCredentials([usernamePassword(
-            credentialsId: 'github-https-creds',
-            usernameVariable: 'GIT_USERNAME',
-            passwordVariable: 'GIT_PASSWORD'
-          )]) {
-            bat """
+        ws(env.LOCAL_REPO) {
+          withCredentials([gitUsernamePassword(credentialsId: 'Jenkins', gitToolName: 'Default')]) {
+            bat '''
               @echo off
-              git config user.email "jenkins@pipeline.com"
-              git config user.name  "Jenkins CI"
-              git status
-              git add .
-              REM Commit only if there are changes
-              git diff --cached --quiet || git commit -m "Jenkins: Auto-commit after build"
-              REM Ensure push is authenticated with HTTPS credential
-              git remote set-url origin https://%GIT_USERNAME%:%GIT_PASSWORD%@github.com/MiruthyanJayanS/Bstack-demo-Automation-Testing-Capstone-Project.git
-              REM Prefer Multibranch BRANCH_NAME; else fallback to GIT_BRANCH or main
+              git config user.email "mirthya.s.ad.2020@snsce.ac.in"
+              git config user.name  "Admin"
+
+              REM Ensure upstream is set once; ignore error if already set
+              git branch --set-upstream-to=origin/main 1>NUL 2>NUL
+
+              REM Commit local changes (does nothing if no changes)
+              git add -A
+              git commit -m "ci: auto-commit from Jenkins" || echo No local changes to commit
+
+              REM Rebase onto origin without discarding local commits; auto-stash uncommitted edits
+              git pull --rebase --autostash origin main
+
+              REM Push current branch to origin/main
               if not "%BRANCH_NAME%"=="" (
                 git push origin %BRANCH_NAME%
               ) else (
-                if not "%GIT_BRANCH%"=="" (
-                  git push origin %GIT_BRANCH%
-                ) else (
-                  git push origin HEAD:main
-                )
+                git push origin HEAD:main
               )
-            """
-          }
+            '''
+          } 
         }
       }
     }
 
     stage('Deploy') {
-      steps {
-        echo "Deploying to ${env.APP_ENV}..."
-      }
+      steps { echo "Deploying to ${env.APP_ENV}..." }
     }
   }
 
   post {
-    always { echo "Build result: ${currentBuild.currentResult}" }
-    success { echo '✅ Pipeline succeeded!' }
-    failure { echo '❌ Pipeline failed! Check Jenkins logs and reports.' }
+    always  { echo "Build result: ${currentBuild.currentResult}" } 
+    success { echo '✅ Pipeline succeeded!' } 
+    failure { echo '❌ Pipeline failed! Check Jenkins logs and reports.' } 
   }
 }

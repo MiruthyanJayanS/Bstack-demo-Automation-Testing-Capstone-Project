@@ -35,7 +35,7 @@ public class OrderConfirmationTest extends BaseTest {
     Thread.sleep(5000);
     passShot("Shipping submitted", "proceedToCheckoutAndFillAddress_submitted");
   }
-//changes made for third time
+//Changes made now! and now! and now!
   @Test(priority = 3, dependsOnMethods = "proceedToCheckoutAndFillAddress")
   public void assertConfirmationAndDownloadReceipt() throws Exception {
     OrderConfirmationPage confirm = new OrderConfirmationPage(driver);

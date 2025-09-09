@@ -1,0 +1,12 @@
+tests\CartTest.class
+tests\OffersPageTest.class
+stepdefinitions\LoginSteps.class
+tests\CheckoutFlowTest.class
+tests\FavoritesTest.class
+runners\TestRunner.class
+tests\BaseTest.class
+tests\LoginTest.class
+reporting\ExtentTestNgListener.class
+tests\HomePageTest.class
+tests\OrderConfirmationTest.class
+tests\IntegrationFlowTest.class

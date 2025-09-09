@@ -13,7 +13,7 @@ import pages.LoginPage;
 import pages.OrderConfirmationPage;
 
 public class OrderConfirmationTest extends BaseTest {
-
+//Order confiramation Test File
   @Test(priority = 1)
   public void addItemOpenCartAndAssertQty() throws Exception {
     new LoginPage(driver).loginDemo();

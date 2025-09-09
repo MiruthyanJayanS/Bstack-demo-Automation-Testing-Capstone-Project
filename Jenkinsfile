@@ -5,7 +5,10 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git branch: 'main', url: 'https://github.com/MiruthyanJayanS/Bstack-demo-Automation-Testing-Capstone-Project.git'
+        // Authenticated checkout
+        git branch: 'main',
+            credentialsId: 'github-https-creds',
+            url: 'https://github.com/MiruthyanJayanS/Bstack-demo-Automation-Testing-Capstone-Project.git'
       }
     }
 
@@ -20,12 +23,10 @@ pipeline {
       steps {
         echo 'Publishing Cucumber and Extent reports...'
 
-        // Cucumber JSON -> rich Jenkins report
         cucumber fileIncludePattern: 'target/cucumber-reports/*.json',
                  buildStatus: 'UNSTABLE',
                  classifications: [[key: 'Env', value: "${env.APP_ENV}"]]
 
-        // Extent HTML -> HTML Publisher (requires HTML Publisher plugin)
         publishHTML(target: [
           reportDir: 'test-output/ExtentReport',
           reportFiles: 'index.html',
@@ -34,6 +35,41 @@ pipeline {
           allowMissing: false,
           alwaysLinkToLastBuild: true
         ])
+      }
+    }
+
+    stage('Commit & Push Changes') {
+      steps {
+        script {
+          echo 'Checking for changes to push...'
+          withCredentials([usernamePassword(
+            credentialsId: 'github-https-creds',
+            usernameVariable: 'GIT_USERNAME',
+            passwordVariable: 'GIT_PASSWORD'
+          )]) {
+            bat """
+              @echo off
+              git config user.email "jenkins@pipeline.com"
+              git config user.name  "Jenkins CI"
+              git status
+              git add .
+              REM Commit only if there are changes
+              git diff --cached --quiet || git commit -m "Jenkins: Auto-commit after build"
+              REM Ensure push is authenticated with HTTPS credential
+              git remote set-url origin https://%GIT_USERNAME%:%GIT_PASSWORD%@github.com/MiruthyanJayanS/Bstack-demo-Automation-Testing-Capstone-Project.git
+              REM Prefer Multibranch BRANCH_NAME; else fallback to GIT_BRANCH or main
+              if not "%BRANCH_NAME%"=="" (
+                git push origin %BRANCH_NAME%
+              ) else (
+                if not "%GIT_BRANCH%"=="" (
+                  git push origin %GIT_BRANCH%
+                ) else (
+                  git push origin HEAD:main
+                )
+              )
+            """
+          }
+        }
       }
     }
 
